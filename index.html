@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | SCClibfinds</title>
+    <meta property="og:image" content="https://ibb.co/TDh66Xyx" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,100,0,0&icon_names=keyboard_control_key"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=stat_1"
+    />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-lvl">
+        <button
+          style="
+            background-color: hsla(0, 0%, 0%, 0.541);
+            border: solid #fd5521 1px;
+            text-align: center;
+            padding: 9px 11px;
+            margin-top: 70px;
+            float: left;
+          "
+        >
+          <a href="index.html" class="logo__link"
+            ><span style="color: #fd5521">SCC</span>Lib Finds
+            <p class="subtitle">Read, talk, recommend</p></a
+          >
+        </button>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="forum.html">Talk</a>
+          <a href="about.html">About</a>
+          <a href="contacts.html">Contact</a>
+          <div class="loginbtn">
+            <a id="login_tab" onclick="showPopup1()">
+              <div id="login_link">
+                Log In
+                <div class="material-icons" id="acctprof">account_circle</div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="parallax-welcome"></div>
+      <div class="welcome fade-in-center">
+        <div class="hero-text">
+          <h1 class="slideUp">Welcome to SCCLib Finds</h1>
+          <p class="fadeIn">SCC College Libraries and Discussion Board</p>
+
+          <div class="width_60 padding-top20px">
+            <a href="forum.html"
+              ><button class="explore">Explore Discussions</button></a
+            >
+            <a href="contacts.html"
+              ><button class="book_space">Book a Space</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="firstwrapper">
+      <div class="left width_45perc">
+        <p class="subheading turn-text">Join the Conversation</p>
+        <h2 class="glide-text">
+          SCCLibFinds - Your Hub for Community Discussions
+        </h2>
+      </div>
+      <div class="right">
+        <a href="forum.html"><button>Join Us</button></a>
+      </div>
+    </section>
+    <section class="wrapper flex">
+      <div class="left fortywd padding-top10vh fade-in-center">
+        <div class="decor-line-top"></div>
+        <h3 class="flipUp">Book Discussions</h3>
+        <p class="flipUp">
+          Welcome to SCCLibFinds, SCC's localized online platform for engaging
+          discussions about your favorite books and sources. Share your
+          thoughts, tips, and recommendations with fellow book enthusiasts and
+          scholars. Join our community and be part of the ultimate campus-wide
+          book club experience.
+        </p>
+      </div>
+      <div class="right text-align-right paddingbottom width_87perc">
+        <div class="right width_100">
+          <div class="parallax-2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper paddingvertical60">
+      <div class="left width_mid50">
+        <div class="parallax-3"></div>
+      </div>
+      <div class="right width_45perc padding40 fade-in-center">
+        <div class="width_80 padding-top20vh padding-left40">
+          <div class="decor-line-top"></div>
+          <h3 class="flipUp">Library Services</h3>
+          <p class="flipUp">
+            Explore the wide range of library services offered by SCCLibFinds.
+            From book borrowing and interlibrary loans to research assistance
+            and multimedia space booking services, we are dedicated to providing
+            an enriching library experience for all our users.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="padding-top100">
+        <div class="left width_mid40">
+          <div class="padding-top20vh padding-left30 fade-in-center">
+            <div class="decor-line-top"></div>
+            <h3 class="fadeIn">Local Events</h3>
+            <img
+              class="smallcontainer paddingbottom30 fadeIn"
+              src="/images/literacy program.jpg"
+            />
+            <p class="width_90 flipUp">
+              Stay updated on local events and activities hosted by the SCC
+              Library. Whether it's art gallery showcase, literary workshops,
+              storytelling sessions, and information literacy campaigns, there's
+              always something exciting happening at your local library.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper1 z-index-below">
+      <img
+        class="image_fitcontainer right text-align-right img_centerfit"
+        src="images/484827638_629288880013095_3958068512633370715_n.jpg"
+      />
+    </section>
+
+    <section class="wrapper2 margintop200vh gettoknow_wrap z-index-up">
+      <div class="left padding-top20vh gtk-text">
+        <div class="padding-left120 width_80">
+          <h4 class="tilt-text">Get to Know SCCLibFinds</h4>
+          <h2 class="tilt-text">Connecting Readers and Community</h2>
+          <p class="inter-300 gtk-text30 tilt-text">
+            At SCCLibFinds, we are passionate about fostering a vibrant reading
+            community and providing valuable library resources. Our commitment
+            to serving our users goes beyond books; we strive to create an
+            inclusive space for meaningful discussions and knowledge sharing.
+          </p>
+        </div>
+        <div class="padding-top10vh padding-left120 width_82perc">
+          <div class="gtk-statistics padding-left30">
+            <h3 class="gtk-subheading">Est. 2016</h3>
+            <h3 class="gtk-subheading">1000+</h3>
+            <h3 class="gtk-subheading">Diverse</h3>
+          </div>
+          <div class="gtk-statistics">
+            <p class="grid-item kumbh-sans-300">
+              9 Years of Community Engagement
+            </p>
+            <p class="grid-item kumbh-sans-300">Discussion Facilitated</p>
+            <p class="grid-item kumbh-sans-300">Community Members</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper flex remove-padding-bottom">
+      <div class="left width_50 padding-top40px micropadding-left">
+        <h4 class="subheading montserrat-450">Our Offerings</h4>
+        <h2 class="paddingbottom20">
+          Explore the array of services and features available at SCCLibFinds.
+          From interactive discussion forums to library resources and event
+          hosing, we aim to enrich your library experience.
+        </h2>
+        <div class="width_60">
+          <p>
+            Discover the diverse opportunities to engage with fellow readers and
+            participate in stimulating discussions on a wide range of literary
+            topics.
+          </p>
+        </div>
+      </div>
+      <div class="text-align-right margin-sides">
+        <a href="services.html"
+          ><button class="width_128 padding-vertical20">Learn More</button></a
+        >
+      </div>
+    </section>
+
+    <div class="wrapper3 padding-top10">
+      <div class="offer-grid">
+        <div class="offer-grid-item">
+          <img src="images/book.png" />
+          <p>Book Discussions</p>
+        </div>
+        <div class="offer-grid-item">
+          <img src="images/dragon.png" />
+          <p>Storytelling Sessions</p>
+        </div>
+        <div class="offer-grid-item">
+          <img class="specialratio" src="images/banner.png" />
+          <p>Community Events</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="offer-grid-item">
+          <img src="images/plug.png" />
+          <p>Library Services</p>
+        </div>
+        <div class="offer-grid-item">
+          <img src="images/transfer.png" />
+          <p>Interlibrary Loans</p>
+        </div>
+        <div class="offer-grid-item">
+          <img src="images/search.png" alt="" />
+          <p>Research Assistance</p>
+        </div>
+        <div class="offer-grid-item">
+          <img src="images/email.png" alt="" />
+          <p>Digital Resources</p>
+        </div>
+      </div>
+    </div>
+    <footer class="block padding-sides padding-top40px">
+      <div class="footer-grid-container">
+        <div class="footer-grid-item1">
+          <div class="text-align-left">
+            <h3 class="footer-logo__text">
+              SCCLib<br />
+              &nbsp;Finds
+            </h3>
+          </div>
+          <p class="footer-subtitle">Read, talk, recommend</p>
+        </div>
+        <div class="footer-grid-item">
+          <h3>SCC Library</h3>
+          <p>
+            Learning Commons <br />
+            <strong>SCC Main Library</strong>, Saint Columban College,<br />
+            Vicencio Sagun Street, <br />Brgy San Francisco,<br />
+            Pagadian City
+          </p>
+          <p>
+            <strong>Buenavista Campus Library</strong>, Saint Columban College
+            Buenavista Campus, Brgy Buenavista, Pagadian City
+          </p>
+        </div>
+        <div class="footer-grid-sitemap">
+          <h3>Site Map</h3>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="forum.html">Discussion Groups</a>
+          <a href="about.html">About</a>
+          <a href="contacts.html">Contact</a>
+        </div>
+        <div class="footer-grid-item">
+          <h3>Inquiries</h3>
+          <p>
+            For any inquiries, questions, or commendations, please call:
+            123-456-7890
+          </p>
+          <p>
+            Pagadian City <br />
+            7016 Zamboanga del Sur
+          </p>
+        </div>
+        <div class="footer-grid-itemlast">
+          <a href="contacts.html"><button>Contact Us</button></a>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          &#169; 2035 by April Pil. Icons from
+          <a target="_blank" href="https://icons8.com">Icons8</a> and
+          <a target="_blank" href="https://www.flaticon.com/" title="Flaticon"
+            >Flaticon.com'</a
+          >. Hard code version
+        </p>
+      </div>
+    </footer>
+
+    <button id="scrollToTop" onclick="scrollToTop()">
+      <span class="material-symbols-outlined"> stat_1 </span>
+    </button>
+
+    <div class="popup_overlay" id="sign-up-popup">
+      <div class="popup-box">
+        <div style="position: absolute; top: 100px; right: 350px">
+          <a class="close-btn" id="closePopup" onclick="closePopup1()">X</a>
+        </div>
+        <div
+          class="justify-self-center text-align-center padding-top20vh roboto-800 font-size25 width_15"
+        >
+          <h1 id="sign-up">Sign Up</h1>
+          <p class="montserrat-300 padding-top10 font-size18">
+            Already a member? Log In
+          </p>
+          <div class="micro-paddingtop"></div>
+          <div class="signup-btn-container">
+            <button class="white-bg border1px blackfont sign-up-btn">
+              <div class="tiny">
+                <img class="tiny" src="images/google.png" />
+              </div>
+              Sign up with Google
+            </button>
+            <button class="blue-bg border1px sign-up-btn">
+              <div class="tiny">
+                <img class="tiny" src="images/facebook.png" />
+              </div>
+              Sign up with Facebook
+            </button>
+            <div class="justify-self-center width_copy decorative-line">
+              <p class="montserrat-200 micro-paddingtop font-size18">or</p>
+            </div>
+            <button
+              class="white-bg border1px blackfont sign-up-btn-email micro-paddingtop"
+            >
+              Sign up with email
+            </button>
+          </div>
+        </div>
+        <p
+          class="montserrat-300 padding-top20px font-size14 justify-self-center width_mid40 text-align-center"
+        >
+          Your profile will be set to public automatically when you sign up. You
+          can change this later in your profile settings. (Simulation purposes
+          only.)
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const popup = document.getElementById("sign-up-popup");
+      const openPopup = document.getElementById("login_tab");
+      const closePopup = document.getElementById("closePopup");
+
+      openPopup.addEventListener("click", () => {
+        popup.classList.add("show");
+        document.querySelector(".popup-box").classList.add("show");
+      });
+
+      closePopup.addEventListener("click", () => {
+        popup.classList.remove("show");
+        document.querySelector(".popup-box").classList.remove("show");
+      });
+
+      popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+          popup.classList.remove("show");
+          document.querySelector(".popup-box").classList.remove("show");
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollToTopButton = document.getElementById("scrollToTop");
+
+        // Show the button after 11 seconds
+        setTimeout(() => {
+          scrollToTopButton.classList.add("show");
+        }, 5000); // 11 seconds
+      });
+
+      // window.addEventListener("scroll", () => {
+      //   const scrollToTopButton = document.getElementById("scrollToTop");
+      // });
+
+      // // Scroll to top function
+      // function scrollToTop() {
+      //   window.scrollTo({ top: 0, behavior: "smooth" });
+      // }
+
+      // Scroll to top function
+      function scrollToTop() {
+        const scrollStep = -window.scrollY / 250; // Adjust 50 to control speed
+        function scrollAnimation() {
+          if (window.scrollY > 0) {
+            window.scrollBy(0, scrollStep);
+            requestAnimationFrame(scrollAnimation);
+          }
+        }
+        requestAnimationFrame(scrollAnimation);
+      }
+
+      document.querySelectorAll(".fade-in-center").forEach((el, index) => {
+        el.style.animationDelay = `${index * 1.3}s`; // Automatically delays each element
+      });
+    </script>
+  </body>
+</html>

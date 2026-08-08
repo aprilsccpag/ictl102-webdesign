@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | SCClibfinds</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,100,0,0&icon_names=keyboard_control_key"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=stat_1"
+    />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-lvl">
+        <button
+          style="
+            background-color: hsla(0, 0%, 0%, 0.541);
+            border: solid #fd5521 1px;
+            text-align: center;
+            padding: 9px 11px;
+            margin-top: 70px;
+            float: left;
+          "
+        >
+          <a href="index.html" class="logo__link"
+            ><span style="color: #fd5521">SCC</span>Lib Finds
+            <p class="subtitle">Read, talk, recommend</p></a
+          >
+        </button>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="forum.html">Talk</a>
+          <a href="about.html">About</a>
+          <a href="contacts.html">Contact</a>
+          <div class="loginbtn">
+            <a id="login_tab" onclick="showPopup1()">
+              <div id="login_link">
+                Log In
+                <div class="material-icons" id="acctprof">account_circle</div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="about-header"></div>
+      <div class="welcome padding-left100">
+        <div class="about_title">
+          <h1>About Page</h1>
+          <h2 class="sub width_35perc line-height1-5">Behind SCCLib Finds</h2>
+        </div>
+      </div>
+    </header>
+    <section class="aboutwrapper gap50px">
+      <div class="left width_mid30 padding-right114">
+        <h3>SCCLibFinds - A Local Library Website</h3>
+        <p>
+          SCCLibFinds is a local library website that serves as an online
+          discussion board for its users or readers, while at the same time
+          acting as guide for its library services. Here, you can engage in
+          conversations, share thoughts, and connect with other book
+          enthusiasts. Join us in exploring the world of literature and
+          knowledge.
+        </p>
+      </div>
+      <div class="about-author-container">
+        <div class="paddingbottom30">
+          <img src="images/unnamed.jpg" class="about-author" />
+        </div>
+        <h4>April Rose Pil</h4>
+        <div class="decor-line-bottom"></div>
+        <p><b>Age:</b> 28 years old</p>
+        <p><b>Course and Year:</b> BLIS-1</p>
+        <p><b>Hobbies and Interest:</b> Music, art, and pop culture.</p>
+      </div>
+    </section>
+
+    <footer class="block padding-sides padding-top40px">
+      <div class="footer-grid-container border-top padding-top40px">
+        <div class="footer-grid-item1">
+          <div class="text-align-left">
+            <h3 class="footer-logo__text">
+              SCCLib<br />
+              &nbsp;Finds
+            </h3>
+          </div>
+          <p class="footer-subtitle">Read, talk, recommend</p>
+        </div>
+        <div class="footer-grid-item">
+          <h3>SCC Library</h3>
+          <p>
+            Learning Commons <br />
+            <strong>SCC Main Library</strong>, Saint Columban College,<br />
+            Vicencio Sagun Street, <br />Brgy San Francisco,<br />
+            Pagadian City
+          </p>
+          <p>
+            <strong>Buenavista Campus Library</strong>, Saint Columban College
+            Buenavista Campus, Brgy Buenavista, Pagadian City
+          </p>
+        </div>
+        <div class="footer-grid-sitemap">
+          <h3>Site Map</h3>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="forum.html">Discussion Groups</a>
+          <a href="about.html">About</a>
+          <a href="contacts.html">Contact</a>
+        </div>
+        <div class="footer-grid-item">
+          <h3>Inquiries</h3>
+          <p>
+            For any inquiries, questions, or commendations, please call:
+            123-456-7890
+          </p>
+          <p>
+            Pagadian City <br />
+            7016 Zamboanga del Sur
+          </p>
+        </div>
+        <div class="footer-grid-itemlast">
+          <a href="contacts.html"><button>Contact Us</button></a>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          &#169; 2035 by April Pil. Icons from
+          <a target="_blank" href="https://icons8.com">Icons8</a> and
+          <a target="_blank" href="https://www.flaticon.com/" title="Flaticon"
+            >Flaticon.com'</a
+          >. Hard code version
+        </p>
+      </div>
+    </footer>
+
+    <div class="popup_overlay" id="sign-up-popup">
+      <div class="popup-box">
+        <div style="position: absolute; top: 100px; right: 350px">
+          <a class="close-btn" id="closePopup" onclick="closePopup1()">X</a>
+        </div>
+        <div
+          class="justify-self-center text-align-center padding-top20vh roboto-800 font-size25 width_15"
+        >
+          <h1 id="sign-up">Sign Up</h1>
+          <p class="montserrat-300 padding-top10 font-size18">
+            Already a member? Log In
+          </p>
+          <div class="micro-paddingtop"></div>
+          <div class="signup-btn-container">
+            <button class="white-bg border1px blackfont sign-up-btn">
+              <div class="tiny">
+                <img class="tiny" src="images/google.png" />
+              </div>
+              Sign up with Google
+            </button>
+            <button class="blue-bg border1px sign-up-btn">
+              <div class="tiny">
+                <img class="tiny" src="images/facebook.png" />
+              </div>
+              Sign up with Facebook
+            </button>
+            <div class="justify-self-center width_copy decorative-line">
+              <p class="montserrat-200 micro-paddingtop font-size18">or</p>
+            </div>
+            <button
+              class="white-bg border1px blackfont sign-up-btn-email micro-paddingtop"
+            >
+              Sign up with email
+            </button>
+          </div>
+        </div>
+        <p
+          class="montserrat-300 padding-top20px font-size14 justify-self-center width_mid40 text-align-center"
+        >
+          Your profile will be set to public automatically when you sign up. You
+          can change this later in your profile settings. (Simulation purposes
+          only.)
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const popup = document.getElementById("sign-up-popup");
+      const openPopup = document.getElementById("login_tab");
+      const closePopup = document.getElementById("closePopup");
+
+      openPopup.addEventListener("click", () => {
+        popup.classList.add("show");
+        document.querySelector(".popup-box").classList.add("show");
+      });
+
+      closePopup.addEventListener("click", () => {
+        popup.classList.remove("show");
+        document.querySelector(".popup-box").classList.remove("show");
+      });
+
+      popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+          popup.classList.remove("show");
+          document.querySelector(".popup-box").classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>

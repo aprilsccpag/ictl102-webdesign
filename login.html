@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up or Log In | SCClibfinds</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,100,0,0&icon_names=keyboard_control_key"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=stat_1"
+    />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div id="sign-up-popup">
+      <div style="position: absolute; top: 100px; right: 350px">
+        <a class="close-btn" onclick="closePopup1()">X</a>
+      </div>
+      <div
+        class="justify-self-center text-align-center padding-top20vh roboto-800 font-size25 width_15"
+      >
+        <h1 id="sign-up">Sign Up</h1>
+        <p class="montserrat-300 padding-top10 font-size18">
+          Already a member? Log In
+        </p>
+        <div class="micro-paddingtop"></div>
+        <div class="signup-btn-container">
+          <button class="white-bg border1px blackfont sign-up-btn">
+            <div class="tiny"><img class="tiny" src="images/google.png" /></div>
+            Sign up with Google
+          </button>
+          <button class="blue-bg border1px sign-up-btn">
+            <div class="tiny">
+              <img class="tiny" src="images/facebook.png" />
+            </div>
+            Sign up with Facebook
+          </button>
+          <div class="justify-self-center width_copy decorative-line">
+            <p class="montserrat-200 micro-paddingtop font-size18">or</p>
+          </div>
+          <button
+            class="white-bg border1px blackfont sign-up-btn-email micro-paddingtop"
+          >
+            Sign up with email
+          </button>
+        </div>
+      </div>
+      <p
+        class="montserrat-300 padding-top20px font-size14 justify-self-center width_mid40 text-align-center"
+      >
+        Your profile will be set to public automatically when you sign up. You
+        can change this later in your profile settings. (Simulation purposes
+        only.)
+      </p>
+    </div>
+
+    <script>
+      function showPopup1(title) {
+        document.getElementById("sign-up").textContent = title;
+        document.getElementById("sign-up-popup").style.display = "flex";
+      }
+
+      function closePopup1() {
+        document.getElementById("sign-up-popup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
