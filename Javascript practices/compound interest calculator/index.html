@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Interest Calculator</h1>
+
+    <form>
+      <label for="principal">Principal Amount</label>
+      <input type="number" id="principal" />
+
+      <label for="rate">Interest Rate</label>
+      <input type="number" id="rate" />
+
+      <label for="years">Years</label>
+      <input type="number" id="years" />
+
+      <button class="submit" onclick="calculate()" type="button">Submit</button>
+
+      <p id="total">Total: <span id="total-amt">$0.00</span></p>
+    </form>
+
+    <h1>Alphanumeric Combinations Calculator</h1>
+
+    <form id="alphanum">
+      <label for="letter-amt">From A-Z</label>
+      <p>How many letters will each combination have?</p>
+      <input type="number" id="letter-amt" placeholder="0" />
+
+      <label for="number-amt">From 0-9</label>
+      <p>How many digits will each combination have?</p>
+      <input type="number" id="number-amt" placeholder="0" />
+
+      <label for="special-amt"
+        >From this set of special characters: <br />[!, @, *, -, +, &, /,
+        %]</label
+      >
+      <p>How many special characters will each combination have?</p>
+      <input type="number" id="special-amt" placeholder="0" />
+
+      <button class="submit" onclick="calcu()" type="button">Submit</button>
+      <br />
+      <button class="reset" onclick="eraseInput()" type="button">Reset</button>
+
+      <p id="ways">Total Ways: <span id="total-ways"></span></p>
+      <p id="withoutrep">
+        Number of combinations <b>without</b> repetitions:
+        <span id="wo-rep"></span>
+      </p>
+      <p id="withrep">
+        Number of combinations <b>with</b> repetitions:
+        <span id="with-rep"></span>
+      </p>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
